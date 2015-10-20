@@ -59,7 +59,7 @@ app.get('/', function (req, res) {
       res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
     });
   } else {
-    res.render('index.html', { pageCountMessage : '5'});
+    res.render('index.html', { pageCountMessage : process.env.DATABASE_SERVICE_PORT_DB});
   }
 });
 
