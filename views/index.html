@@ -281,7 +281,7 @@ $ git push</pre>
                   </ul>
 
                 <h2>Request information</h2>
-                <p>Page view count:
+                <p>Page view count:<span class="code" id="count-value"><%=pageCountMessage%></span>
                 <% if (pageCountMessage) { %>
                    <span class="code" id="count-value"><%=pageCountMessage%></span>
                    </p>
@@ -292,7 +292,7 @@ $ git push</pre>
                       </table>
                     </div>
                 <% } else { %>
-                   <span class="code" id="count-value">No database configured</span>
+                   <span class="code" id="count-value"><%=pageCountMessage%></span>
                    </p>
                 <%} %>
           </section>
